@@ -1,0 +1,836 @@
+body {
+    background-color: #000000;
+    color: white;
+}
+
+
+.navbar {
+    background: url(/assets/imgs/nav-bg.png) no-repeat center;
+    background-size: contain;
+    height: 190px;
+    background-size: 100% 100%;
+    margin-top: -40px;
+    position: relative;
+    z-index: 5;
+
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Aller light;
+    margin-left: 45px;
+    padding-left: 75px !important;
+    margin-bottom: 35px;
+}
+
+.navbar-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #F4991A !important;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #080808;
+    /* Match the navbar background */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.navbar-nav .dropdown-item {
+    color: white;
+    font-size: 16px;
+    font-family: Aller Regular;
+    padding: 10px 20px;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #F4991A;
+    /* Highlight color */
+    color: black;
+}
+
+.sidebar-menu {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 250px;
+}
+
+.sidebar-menu .offcanvas-body {
+    padding: 20px;
+}
+
+.sidebar-menu .list-group-item {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+.sidebar-menu .list-group-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar-menu .list-group-item:hover {
+    background: #F4991A;
+}
+
+.navbar-toggler {
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.right-menu {
+    margin-left: 95px;
+}
+
+.top-bg {
+    width: 70%;
+    position: relative;
+    z-index: 3;
+    left: 15%;
+    margin-top: -230px;
+}
+
+/* Mobile View: Center Logo */
+@media (max-width: 768px) {
+    .navbar {
+        background-size: 100% 35% !important;
+        margin-top: -85px;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+        z-index: 10;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        z-index: 11;
+    }
+
+    .navbar-nav {
+        display: none !important;
+    }
+
+    .navbar-collapse {
+        display: none !important;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+/* Optional: Limit logo size on small devices */
+.navbar-brand img {
+    max-height: 55px;
+    width: auto;
+}
+
+/* General Tweaks */
+.navbar-toggler {
+    border: none;
+    padding: 6px;
+}
+
+.navbar-toggler-icon {
+    width: 22px !important;
+    height: 22px !important;
+    filter: invert(1);
+}
+
+
+@media (max-width: 478px) {
+
+    /* Adjust Navbar Position */
+    .navbar-container {
+        margin-top: -40px;
+        margin-left: 0;
+    }
+
+    .navbar {
+        margin-top: -85px;
+        background-size: 100% 35% !important;
+    }
+
+    /* Reduce Menu Button (Toggler) Size */
+    .navbar-toggler {
+        border: none;
+        padding: 6px;
+        /* Reduce padding for a smaller button */
+    }
+
+    .navbar-toggler-icon {
+        width: 22px !important;
+        /* Reduce icon size */
+        height: 22px !important;
+        filter: invert(1);
+        /* Make it white */
+    }
+
+    /* Center Logo Properly */
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Move Toggler Button to the Right */
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+        top: 40px;
+    }
+
+    .dropdown-menu {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        /* Center the dropdown menu */
+    }
+
+    .navbar-brand img {
+        max-height: 45px;
+        width: auto;
+    }
+
+}
+
+
+.products-image img {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    max-width: 450px;
+}
+
+
+/*  */
+.contact-hero-section {
+    background: url('/assets/imgs/newcontactBanner-01.jpg') no-repeat center/cover;
+    height: 500px;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .contact-hero-section {
+        height: 400px;
+    }
+
+    .products-image img {
+        width: 80%;
+        margin-top: 30px;
+        border: 2px solid;
+    }
+}
+
+@media (max-width: 468px) {
+    .contact-hero-section {
+        height: 300px;
+    }
+
+    .products-image img {
+        display: none;
+        border: 2px solid red;
+
+    }
+}
+
+/* .contact-banner-container {
+    background: url('/assets/imgs/contact-bg.png') no-repeat center/cover;
+    height: 800px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
+
+
+@media (max-width: 768px) {
+    .contact-banner-container {
+        height: 600px;
+    }
+}
+
+@media (max-width: 468px) {
+    .contact-banner-container {
+        height: 500px;
+    }
+}
+
+/*  */
+
+/* Contact Section by Robin */
+
+.contact-detail-section {
+    /* background-color: black; */
+    padding: 150px 0;
+    position: relative;
+    color: white;
+    background-image: url(../imgs/contactus-final-16.jpg);
+}
+
+.contact-detail-title {
+    color: #D82127;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: Aller Bold;
+}
+
+.corporate-office h2,
+.registered-office h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: DIN Pro;
+}
+
+.corporate-office p {
+    font-size: 16px;
+    line-height: auto;
+    letter-spacing: 6%;
+    font-family: DIN Pro;
+    font-weight: 400;
+}
+
+.registered-office p {
+    font-size: 16px;
+    line-height: auto;
+    letter-spacing: 6%;
+    font-family: DIN Pro;
+}
+
+
+
+.contact-detail-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 220px;
+}
+
+
+.map-container {
+    width: 100%;
+    height: 450px;
+    /* Adjust height as needed */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    background: url('/assets/imgs/contactnew02.png') no-repeat center/cover;
+    align-items: center;
+    /* Ensures vertical alignment */
+    height: 100vh;
+}
+
+.contact-section {
+    padding: 40px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.contact-title {
+    color: #D82127;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: Copperplate Gothic Bold;
+}
+
+.form-control {
+    width: 100%;
+    /* Ensures full width */
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #E5AA11;
+    border-radius: 0;
+    font-size: 18px;
+    color: #E5AA11;
+    box-shadow: none !important;
+}
+
+.form-control:focus,
+.form-control:hover {
+    border-bottom: 2px solid #ffdc6a;
+    color: #E5AA11;
+    background-color: transparent;
+}
+
+.form-control::placeholder {
+    color: #ffdc6a;
+    opacity: 0.7;
+}
+
+.send-btn {
+    background: #E5AA11;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.send-btn:hover {
+    background: #D82127;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .form-control {
+        font-size: 16px;
+    }
+
+    .send-btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 468px) {
+    .corporate-office h2 {
+        font-size: 18px;
+    }
+
+    .contact-detail-section {
+        padding: 10px;
+    }
+
+    .contact-detail-title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .corporate-office h2,
+    .registered-office h2 {
+        font-size: 16px;
+    }
+    .corporate-office p {
+        font-size: 14px;
+    }
+    .registered-office p {
+        font-size: 14px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .content-container {
+        padding: 20px;
+        height: 50vh;
+    }
+
+    
+}
+
+
+
+/* footer Section by Robin */
+.footer {
+    background: url('/assets/imgs/common-footer.png') no-repeat center/cover;
+    padding: 6px 10px;
+    position: relative;
+    color: black;
+    margin-top: -225px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    margin-top: 320px;
+    font-family: Aller Bold;
+}
+
+
+
+.footer-logo {
+    position: absolute;
+    top: -80px;
+    left: -3px;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #D82127;
+    font-family: DIN Pro;
+    text-transform: uppercase;
+}
+
+.logo-sub {
+    display: block;
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+}
+
+.footer-column {
+    flex: 1;
+    font-family: DIN Pro;
+    min-width: 280px;
+
+}
+
+
+.corporate-office {
+    /* text-align: left; */
+}
+
+.quick-links {
+    text-align: center;
+}
+
+.legal {
+    text-align: right;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: Aller Bold;
+
+}
+
+
+.corporate-office p {
+    font-family: 'Aller light';
+}
+
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Aller light';
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-family: 'Aller light';
+
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Aller light';
+}
+
+.footer-column ul li a:hover {
+    color: #D82127;
+}
+
+
+@media (max-width: 1200px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-column {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .footer-title {
+        font-size: 24px;
+    }
+
+    .footer {
+        margin-top: -150px;
+
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 480px;
+    }
+
+    .footer-logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-column {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-title {
+        font-size: 22px;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        /* columns: 2px !important; */
+        flex-direction: column;
+        align-items: center;
+        /* This centers all children horizontally */
+        text-align: center;
+        /* This centers text inside each column */
+    }
+
+    .footer{
+        padding-top: 0px;
+    }
+
+    .footer-column,
+    .footer-logo {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+
+
+    .footer-logo img {
+        max-width: 180px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 8px;
+    }
+}
+
+@media(max-width: 576px) {
+    .footer-logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+
+        padding: 10px !important;
+        margin-top: -250px;
+
+    }
+
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer-column {
+        flex: 1;
+        font-family: 'Aller light';
+        text-align: center;
+    }
+
+    .footer-column ul li a {
+        font-size: 14px;
+    }
+}
+
+/*  */
+
+@media(max-width: 420px) {
+    .footer-logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-column {
+        flex: 1;
+        font-family: 'Aller light';
+        text-align: center;
+
+    }
+
+    .footer {
+
+        padding: 10px !important;
+        margin-top: -320px;
+    }
+
+    .footer-column ul li a {
+        font-size: 14px;
+    }
+
+    .quick-links2 {
+        text-align: center;
+    }
+
+    .legal2 {
+        text-align: center;
+    }
+}
+
+.heading-links {
+    font-size: 16px;
+}
+
+
+/*  */
+
+/* WhatsApp Button */
+
+.whatsapp-btn {
+   position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+}
+
+
+.whatsapp-btn img {
+    width:100px;
+    height: 100px
+}
+
+/* Add social media Icons */
+.social-media-icons {
+    display: flex;
+    margin-left: 4px;
+    margin-top: 10px;
+    padding: 10px 30px;
+    justify-content: space-between;
+    gap: 14px;
+    transition: transform 0.3s ease;
+    box-shadow:
+        rgba(255, 193, 7, 0.7) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    cursor: pointer;
+}
+
+.social-media-icons:hover {
+    transform: scale(1.05);
+}
+
+.social-media-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.product-bg-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: -100px;
+    height: 600px;
+}

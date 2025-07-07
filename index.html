@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chancellor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+  <style>
+    @font-face {
+      font-family: 'Copperplate Gothic Std 29 AB';
+      font-style: normal;
+      font-weight: normal;
+      src: url('assets/fonts/Copperplate-Gothic-Std-29-AB.woff') format('woff');
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container navbar-container">
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Logo (Centered Only in Mobile) -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/imgs/newLogoChancellor.png" alt="logo">
+      </a>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="kachighaniOil.html">Kachi Ghani Pure Mustard Oil</a></li>
+              <li><a class="dropdown-item" href="mustardOil.html">Mustard Oil</a></li>
+              <li><a class="dropdown-item" href="VanaspatiDanedaarOil.html">Vanaspati Safed & Danedaar Ghee</a></li>
+              <li><a class="dropdown-item" href="refinedSoyabeenOil.html">Refined Soyabean Oil</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-start sidebar-menu" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebarLabel">
+        <img src="assets/imgs/newLogoChancellor.png" alt="logo" class="img-fluid">
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="/">Home</a></li>
+        <li class="list-group-item"><a href="aboutus.html">About Us</a></li>
+        <li class="list-group-item">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="mobileProductsDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="mobileProductsDropdown">
+              <a class="dropdown-item text-black hover:bg-yellow-400 hover:text-black" href="kachighaniOil.html">
+                Kachi Ghani Pure Mustard Oil
+              </a>
+              <li><a class="dropdown-item text-black" href="mustardOil.html">Mustard Oil</a></li>
+              <li><a class="dropdown-item text-black" href="VanaspatiDanedaarOil.html">Vanaspati Safed & Danedaar
+                  Oil</a></li>
+              <li><a class="dropdown-item text-black" href="refinedSoyabeenOil.html">Refined Soyabean Oil</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Hero Section -->
+  <div class="hero-container" id="hero-banner">
+    <div class="hero-content">
+      <h2 id="slide-title">Robust Flavor Wellness Boost</h2>
+      <p id="slide-description">
+        Experience the richness of traditional cooking with our refined soybean oil, crafted for health and taste.
+      </p>
+      <button class="hero-btn" id="slide-button">All Products</button>
+    </div>
+    <div class="hero-nav">
+      <span class="dot" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+    </div>
+  </div>
+
+
+
+
+  <!-- Script of Slider Banner -->
+  <script>
+    const banner = document.getElementById("hero-banner");
+    const dots = document.querySelectorAll(".dot");
+    const aboutButton = document.getElementById("slide-button");
+
+    const slides = [
+      {
+        image: "/assets/imgs/kachi-ghani-top-banner-01.jpg",
+        mobileImage: "/assets/imgs/mobileview01.png",
+        title: "Cold-Pressed For Balanced Nutrition",
+        description: "Made from the finest mustard seeds, this cold-pressed oil retains natural antioxidants and a rich, pungent flavor to complement your traditional recipes",
+        buttonText: "About us"
+      },
+      {
+        image: "/assets/imgs/poductBannerFix20.jpg",
+        mobileImage: "/assets/imgs/mobileview03.png",
+        title: "Goodness Of Omega 3 & 6 With A Kick Of Taste",
+        description: "Packed with essential nutrients like omega 3 & 6, this mustard oil brings the authentic taste of home cooking while supporting heart health and immunity.",
+        buttonText: "About us"
+      },
+      {
+        image: "/assets/imgs/poductBannerFix40.jpg",
+        mobileImage: "/assets/imgs/mobileview05.png",
+        title: "Authentic Ghee For Traditional Recipes",
+        description: "With its grainy texture and high smoke point makes it suitable for deep frying. Vanaspati ghee primarily used in sweets, bakery items, crispier fried snacks for delicious taste in every bite.",
+        buttonText: "About us"
+      },
+      {
+        image: "/assets/imgs/productBannerFix10.jpg",
+        mobileImage: "/assets/imgs/mobileview01.png",
+        title: "Right For Frying When Health’s On The Mind",
+        description: "Low in Saturated fat & high in polyunsaturated fatty acids, especially Omega-6 and enriched with Vitamin A & D to support healthy living.This refined soybean oil is perfect for daily cooking, keeping your meals light, nutritious, and flavorful.",
+        buttonText: "About us"
+      }
+    ];
+
+    let currentIndex = 0;
+    let sliderInterval;
+
+    function showSlide(index) {
+      const slide = slides[index];
+      const isMobile = window.innerWidth <= 768;
+      const backgroundImage = isMobile && slide.mobileImage ? slide.mobileImage : slide.image;
+
+      banner.classList.add("fade-out");
+
+      setTimeout(() => {
+        banner.style.backgroundImage = `url('${backgroundImage}')`;
+        document.getElementById("slide-title").textContent = slide.title;
+        document.getElementById("slide-description").textContent = slide.description;
+        document.getElementById("slide-button").textContent = slide.buttonText;
+
+        dots.forEach(dot => dot.classList.remove("active"));
+        dots[index].classList.add("active");
+
+        banner.classList.remove("fade-out");
+      }, 300);
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function startSlider() {
+      sliderInterval = setInterval(nextSlide, 9000);
+    }
+
+    function stopSlider() {
+      clearInterval(sliderInterval);
+    }
+
+    // Dot click events
+    dots.forEach(dot => {
+      dot.addEventListener("click", () => {
+        const index = parseInt(dot.getAttribute("data-index"));
+        currentIndex = index;
+        showSlide(currentIndex);
+        stopSlider();
+        startSlider();
+      });
+    });
+
+    // Redirect on About button click
+    aboutButton.addEventListener("click", () => {
+      window.location.href = "aboutus.html";
+    });
+
+    // Initialize
+    showSlide(currentIndex);
+    startSlider();
+  </script>
+
+
+  <!-- Script of Slider Banner -->
+
+  <!-- <script>
+        const slides = document.querySelector('.slides');
+        const dotsContainer = document.querySelector('.navigation');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        let index = 0;
+
+        function createDots() {
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                dot.dataset.index = i;
+                dotsContainer.appendChild(dot);
+            }
+            dotsContainer.children[0].classList.add('active');
+        }
+
+        function updateSlide() {
+            slides.style.transform = `translateX(-${index * 100}vw)`;
+            document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+            dotsContainer.children[index].classList.add('active');
+        }
+
+        function autoSlide() {
+            index = (index + 1) % totalSlides;
+            updateSlide();
+        }
+
+        dotsContainer.addEventListener('click', (e) => {
+            if (e.target.classList.contains('dot')) {
+                index = parseInt(e.target.dataset.index);
+                updateSlide();
+            }
+        });
+
+        createDots();
+        setInterval(autoSlide, 3000);
+    </script> -->
+  <!-- Brand Section -->
+  <section class="brand-section">
+    <div class="leftside-bg">
+      <img src="/assets/imgs/leftsideproductbg.png" alt="Background Art" />
+    </div>
+    <h2 class="brand-title mt-5"><span>A</span>bout &nbsp; <span>U</span>s</h2>
+    <p class="text-center aboutus-section-subheading">Rooted in Heritage, Crafted with Excellence</p>
+    <div class="brand-content">
+      Nestled in the heart of Alwar, Rajasthan, Chancellor Edible Oil embodies the region’s rich history and royal
+      legacy. Inspired by the grandeur of Alwar’s forts and havelis, our brand stands tall in the FMCG industry,
+      delivering unmatched quality and tradition in every drop. We believe that cooking is more than just a daily
+      chore—it’s a legacy passed down through generations, and our oils carry the essence of this timeless heritage.
+    </div>
+  </section>
+
+  <!-- products section -->
+  <section class="products-section mt-4">
+    <h2 class="products-title"><span>O</span>ur &nbsp; <span>P</span>roducts</h2>
+    <div class="container-fluid">
+
+      <!-- Product 1 -->
+      <div class="row mt-5 align-items-center">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center mb-3 mb-md-0">
+          <img class="product-img" src="assets/imgs/kachiGhaniNew01.png" alt="kachi ghani">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="kd-content-bg">
+            <p>
+              A symbol of Trust, Tradition, Excellence, and Heritage, Kachi Ghani Pure Mustard Oil delivers Royalty and
+              Quality in every drop. Extracted through the ancient cold-pressed method, it retains its natural pungency
+              and authentic nutrients, cherished by housewives, families, and wellness enthusiasts and known for its
+              antibacterial and heart-friendly properties. This oil is the expert’s choice for deep frying, pickling,
+              and traditional meals. Providing high-quality, best-in-class edible oil, it brings a touch of royalty to
+              every kitchen it graces.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="row mt-5 align-items-center flex-md-row-reverse">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center mb-3 mb-md-0">
+          <img class="product-img" src="assets/imgs/MustardOilNew01.png" alt="mustard oil">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="so-content-bg">
+            <p>
+              With a rich heritage from Rajasthan and a reputation built on Faith, Ancient Wisdom, and Expertise,
+              mustard oil is a reliable, royal kitchen essential. Its high smoke point and natural immunity-boosting
+              qualities make it a staple for Nutritionally Minded and Holistic Health Seekers. Every drop enhances
+              flavors with a regal depth, from curries to stir-fries, offering a culinary experience rooted in tradition
+              and excellence. Backed by satisfied customer testimonials, it's a classic with a majestic soul.
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="row mt-5 align-items-center">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center mb-3 mb-md-0">
+          <img class="product-img" src="assets/imgs/SoyabeanOilNew01.png" alt="soybean oil">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="v-content-bg">
+            <p>
+              Designed for the modern kitchen, Refined Soyabean Oil blends excellence and reliability with
+              health-conscious innovation. Enriched with Omega-3 & 6 and Vitamin A & D, it’s ideal for deep frying.
+              Light, versatile, and processed with state-of-the-art technology, it offers Royalty and Quality in every
+              drop.Best-in-class edible oil, trusted by wellness-enthusiasts and families alike, it ensures your food
+              stays flavorful, healthy, and truly majestic.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="row mt-5 align-items-center flex-md-row-reverse">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center mb-3 mb-md-0">
+          <img class="product-img" src="assets/imgs/VanaspatiNew01.png" alt="vanaspati">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="mo-content-bg">
+            <p>
+              Embodying the luxurious texture and authentic taste of Indian festivities, Vanaspati Ghee is revered for
+              its signature grainy richness. Trusted by generations of Housewives, Families, and Halwais, it transforms
+              sweets and parathas into regal culinary delights. Crafted with state-of-the-art technology and premium
+              production standards, this is as majestic as the meals it elevates. From heritage kitchens to modern
+              homes, it stands as a reliable expert in festive and everyday indulgence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- video section -->
+  <section>
+    <img class="w-100" src="assets/imgs/home-new-cooking.jpg" alt="video banner">
+  </section>
+
+  <!-- contact section -->
+  <section class="contact-container">
+    <div class="contact-section">
+      <h2 class="contact-title">Contact</h2>
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Full Name">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Contact Number">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn send-btn">Send Us</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo Section (Top Left) -->
+      <div class="footer-logo">
+        <img src="/assets/imgs/chancellor-logo.png" />
+      </div>
+
+      <!-- Corporate Office Section (Left) -->
+      <div class="footer-column corporate-office">
+        <h3 class="footer-title">Corporate Office</h3>
+        <p>Bhagwati Sadan, Swami Dayanand Marg, Alwar (Raj.) 301001 INDIA</p>
+        <!-- <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipis.</p> -->
+        <p><strong>Tel No:</strong>+91 144 2332922/2332358</p>
+        <p><strong>E-mail:</strong>mktg@dataoils.com</p>
+      </div>
+
+      <!-- Quick Links Section (Center) -->
+      <div class="footer-column quick-links">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Catalogue</a></li>
+          <li><a href="#">Site Map</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal Section (Right) -->
+      <div class="footer-column quick-links">
+        <h3 class="footer-title">Legal</h3>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-condition.html">T&C</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="data-group-logo">
+        <img src="/assets/imgs/dataoilLogo.png" alt="Data Group Logo" />
+        <div class="social-media-icons">
+          <a class="social-media-link" href="https://www.instagram.com/datagroup_edibleoils" target="_blank">
+            <i class="fa-brands fa-instagram fa-xl"></i> <!-- Increased size -->
+          </a>
+          <a class="social-media-link" href="https://www.facebook.com/dataoils/" target="_blank">
+            <i class="fa-brands fa-facebook fa-xl"></i>
+          </a>
+          <a class="social-media-link" href="https://www.youtube.com/@datagroupedibleoils" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube fa-xl"></i>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <!-- WhatsApp Button -->
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919929596489" class="whatsapp-btn" target="_blank" aria-label="Chat with us on WhatsApp">
+    <img src="/assets/imgs/whatsappIcon.webp" alt="WhatsApp Icon" />
+  </a>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
