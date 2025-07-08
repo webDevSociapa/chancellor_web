@@ -462,7 +462,6 @@ body {
     width: 820px;
     border-radius: 10px;
 }
-
 .pure-main-content-kachi h2 {
     color: #D82228;
     font-size: 30px;
@@ -480,7 +479,8 @@ body {
             #f9cca7);
 
     height: 250px;
-    width: 820px;
+        width: 820px;
+
     border-radius: 10px;
 }
 
@@ -600,6 +600,63 @@ body {
 .vanaspati-table-image-1 {
     margin-top: 14px;
 }
+
+
+@media (max-width: 768px) {
+    .pure-product-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .product-part,
+    .product-part2 {
+        width: 180px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .pure-main-content-kachi,
+    .pure-main-content-mustard,
+    .pure-main-content-vanaspati,
+    .pure-main-content-soyabean {
+        width: 100%; /* takes 90% of screen width for better readability */
+        max-width: 500px; /* restricts it from stretching too wide */
+        height: auto;
+        padding: 20px 90px; /* adequate padding for content */
+        box-sizing: border-box; /* ensure padding doesn't overflow */
+        margin: 0 auto; /* centers the container */
+    }
+
+    .pure-main-content-kachi h2,
+    .pure-main-content-mustard h2,
+    .pure-main-content-vanaspati h2,
+    .pure-main-content-soyabean h2 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .product-list-item li {
+        flex-direction: column;
+        font-size: 16px;
+        padding: 4px 0;
+    }
+
+    .product-list-item .type {
+        font-size: 20px;
+    }
+    .product-list-item .size {
+        font-size: 16px;
+    }
+
+    .taste-product-main-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
 
 /* Container */
 .container-taste {
