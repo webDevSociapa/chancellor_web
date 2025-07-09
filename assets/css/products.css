@@ -11,7 +11,6 @@ body {
     margin-top: -40px;
     position: relative;
     z-index: 5;
-
 }
 
 .navbar-nav .nav-link {
@@ -24,6 +23,7 @@ body {
     margin-bottom: 35px;
 }
 
+
 .navbar-container {
     position: relative;
     display: flex;
@@ -33,6 +33,7 @@ body {
     padding: 10px 20px;
 
 }
+
 
 .navbar-brand {
     position: absolute;
@@ -53,6 +54,7 @@ body {
 .navbar-nav .nav-link.show {
     color: #F4991A !important;
 }
+
 
 .navbar-nav .dropdown-menu {
     background-color: #080808;
@@ -298,7 +300,7 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-    width: 570px;
+    width: 680px;
 }
 
 /* Responsive Design */
@@ -456,12 +458,14 @@ body {
 }
 
 .pure-main-content-kachi {
- background: linear-gradient(to right,
+    background: linear-gradient(to right,
             #7c0505,
-            #f1eded);    height: 250px;
+            #f1eded);
+    height: 250px;
     width: 820px;
     border-radius: 10px;
 }
+
 .pure-main-content-kachi h2 {
     color: #D82228;
     font-size: 30px;
@@ -474,12 +478,12 @@ body {
 /*  */
 
 .pure-main-content-mustard {
-      background: linear-gradient(to right,
+    background: linear-gradient(to right,
             #bb6722,
             #f9cca7);
 
     height: 250px;
-        width: 820px;
+    width: 820px;
 
     border-radius: 10px;
 }
@@ -620,12 +624,17 @@ body {
     .pure-main-content-mustard,
     .pure-main-content-vanaspati,
     .pure-main-content-soyabean {
-        width: 100%; /* takes 90% of screen width for better readability */
-        max-width: 500px; /* restricts it from stretching too wide */
+        width: 100%;
+        /* takes 90% of screen width for better readability */
+        max-width: 500px;
+        /* restricts it from stretching too wide */
         height: auto;
-        padding: 20px 90px; /* adequate padding for content */
-        box-sizing: border-box; /* ensure padding doesn't overflow */
-        margin: 0 auto; /* centers the container */
+        padding: 20px 90px;
+        /* adequate padding for content */
+        box-sizing: border-box;
+        /* ensure padding doesn't overflow */
+        margin: 0 auto;
+        /* centers the container */
     }
 
     .pure-main-content-kachi h2,
@@ -645,6 +654,7 @@ body {
     .product-list-item .type {
         font-size: 20px;
     }
+
     .product-list-item .size {
         font-size: 16px;
     }
@@ -1251,7 +1261,7 @@ body {
 
 
 .whatsapp-btn img {
-    width:100px;
+    width: 100px;
     height: 100px
 }
 
@@ -1281,4 +1291,3 @@ body {
 
 
 /*  */
-
