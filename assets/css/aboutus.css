@@ -1044,6 +1044,10 @@ body {
         margin-bottom: 20px;
     }
 
+       .footer-container {
+        margin-top: 600px;
+    }
+
     .footer {
 
         padding: 10px !important;
