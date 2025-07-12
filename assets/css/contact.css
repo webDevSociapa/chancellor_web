@@ -380,6 +380,13 @@ body {
     height: 100vh;
 }
 
+
+@media (max-width: 568px) {
+    .contact-container {
+        height: 70vh;
+    }
+}
+
 .contact-section {
     padding: 40px;
     width: 90%;
