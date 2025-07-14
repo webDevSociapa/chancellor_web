@@ -542,12 +542,12 @@ body {
     margin: 0;
     color: #000000;
     font-family: 'Georgia', serif;
-    /* or the one you’re using */
+    width: 100%; /* ensure ul takes full container width */
 }
 
 .product-list-item li {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     padding: 6px 0;
     font-size: 20px;
@@ -558,11 +558,13 @@ body {
     font-size: 24px;
     letter-spacing: 1px;
     font-variant: small-caps;
+    width: 500px; /* fixed width for perfect alignment */
 }
 
 .product-list-item .size {
     font-size: 18px;
 }
+
 
 /* .product-left-part{
     display: flex;
