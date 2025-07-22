@@ -461,7 +461,7 @@ body {
     background: linear-gradient(to right,
             #7c0505,
             #f1eded);
-    height: 250px;
+    height: 300px;
     width: 820px;
     border-radius: 10px;
 }
@@ -482,7 +482,7 @@ body {
             #bb6722,
             #f9cca7);
 
-    height: 250px;
+    height: 300px;
     width: 820px;
 
     border-radius: 10px;
@@ -501,7 +501,7 @@ body {
 
 .pure-main-content-vanaspati {
     background: linear-gradient(to bottom, rgba(213, 232, 247, 0.6), rgba(160, 196, 231, 0.6), rgba(78, 127, 175, 0.6));
-    height: 350px;
+    height: 300px;
     width: 820px;
     border-radius: 10px;
 }
@@ -520,7 +520,7 @@ body {
 
 .pure-main-content-soyabean {
     background-color: #9bcc5b;
-    height: 250px;
+    height: 300px;
     width: 820px;
     border-radius: 10px;
 }
@@ -536,34 +536,53 @@ body {
 
 
 
+.product-container {
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .product-container {
+  padding: 0 130px; /* adds 30px left and right padding, adjust as needed */
+  }
+}
+
 .product-list-item {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: #000000;
-    font-family: 'Georgia', serif;
-    width: 100%; /* ensure ul takes full container width */
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* centers list if container has max-width */
+  font-family: 'Georgia', serif;
+  width: 100%;
+  max-width: 900px; /* optional max-width to keep within page layout */
 }
 
 .product-list-item li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 6px 0;
-    font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+  font-size: 20px;
 }
 
 .product-list-item .type {
-    font-weight: bold;
-    font-size: 24px;
-    letter-spacing: 1px;
-    font-variant: small-caps;
-    width: 500px; /* fixed width for perfect alignment */
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-variant: small-caps;
 }
 
 .product-list-item .size {
-    font-size: 18px;
+  font-size: 18px;
+  text-align: left;
+  min-width: 100px;
 }
+
+@media (max-width: 480px) {
+   .product-list-item .size {
+    text-align: center;
+   }
+  
+}
+
 
 
 /* .product-left-part{
